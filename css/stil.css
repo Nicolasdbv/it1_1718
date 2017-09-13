@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+body{
+    background: teal;
+}
+h1{
+    font-family:'Roboto', sans-serif
+    font-size: 500%;
+    color: #cfcade
+}
+h2{
+    Font-family: 'Lato', sans-serif
+    font-weight: 400;
+    font-size:200%;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    width: 100%;
+    padding: 0px 0px;
+    margin: 15px 0px;
+
+
+}
+div.velkommen{
+    border: 3px solid;
+    border-radius: 13px;
+    max-width: 350px;
+    margin: auto;
+}
+div.velkommen:hover{
+    border: 3px solid;
+}
+h2:hover{
+    color:
+}
