@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        div.grid{
+            display: grid;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "aside1"
+                "aside2"
+                "aside3"
+                "footer"
+
+        }
+
+        div.header{
+            background-color: #4aaaa5;
+            grid-area: header;
+            height: 100px;
+        }
+
+        div.nav{
+            background-color: #37422e;
+            grid-area: nav;
+        }
+        div.main{
+            background-color: #7accc8;
+            grid-area: main;
+        }
+        div.aside1{
+            background-color: #a3d39c;
+            grid-area: aside1;
+        }
+        div.aside2{
+            background-color: #b89115;
+            grid-area: aside2;
+        }
+        div.aside3{
+            background-color: #a3d39c;
+            grid-area: aside3;
+        }
+        div.footer{
+            background-color: #37422e;
+            color: white;
+            grid-area: footer;
+        }
+
+        @media (min-width: 500px) {
+
+            div.grid{
+                grid-template-columns: 1fr 3fr;
+                grid-template-areas:
+                "header      header"
+                "nav         nav"
+                "aside1      main"
+                "aside2      footer"
+
+
+
+            ;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid">
+
+    <div class="header">
+        <h1>Grid-side</h1>
+    </div>
+
+    <div class="nav">
+        Meny
+    </div>
+
+    <div class="main">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis corporis ducimus et expedita, facilis
+            in odit quam tempore temporibus unde voluptatibus! Dolorem laboriosam maiores perspiciatis sapiente sunt.
+            Laudantium, quidem.</p>
+        <p>Adipisci dignissimos eveniet ex nulla, quidem quod repellendus soluta sunt. Animi autem beatae eius enim,
+            exercitationem facilis impedit in inventore iusto perspiciatis quae quas, qui similique sint ullam vel,
+            veritatis!</p>
+    </div>
+
+    <div class="aside1">
+        aside1
+
+    </div>
+
+    <div class="aside2">
+        t
+
+    </div>
+
+    <div class="footer">
+        s
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

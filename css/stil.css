@@ -14,16 +14,17 @@ h2{
     font-size:200%;
     text-align: center;
     text-transform: uppercase;
+
     color: red;
     width: 100%;
     padding: 0px 0px;
-    margin: 15px 0px;
-
-
-}
-div.velkommen{
+    margin: auto;
     border: 3px solid;
     border-radius: 13px;
+
+}
+a.velkommen{
+    text-decoration: none;
     max-width: 350px;
     margin: auto;
 }

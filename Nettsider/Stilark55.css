@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+
+}
+
+div.grid{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+}
+
+div.header{
+    background-color: black;
+    grid-area: header;
+    height: 100px;
+    color: white;
+    font-size: xx-large;
+}
+.logo{
+    max-width: 50%;
+}
+
+div.nav{
+    background-color: dimgray;
+    grid-area: nav;
+    height: auto;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul a{
+    text-align: center;
+    width: auto;
+    display: block;
+
+}
+div.main{
+    background-color: #cfcade;
+    grid-area: main;
+    height: 810px;
+    font-family: sans-serif;
+    font-size: x-large;
+    padding: 10px;
+}
+
+div.aside{
+    background-color: darkslategray;
+    grid-area: aside;
+    height: 820px;
+    font-size: x-large;
+    font-family: sans-serif;
+    color: white;
+    line-break: normal;
+    text-align: center;
+    padding: 5px;
+}
+
+div.footer{
+    background-color: dimgrey;
+    grid-area: footer;
+    height: 100px;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+@media (min-width: 600px) {
+
+    div.grid {
+
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "header header" "nav    nav" "main   aside" "footer footer";
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    ul li {
+        display: inline;
+
+    }
+
+    ul a {
+        padding 10px 30px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: dimgrey;
+    }
+
+    ul a:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+
+    div.grid {
+        display: grid;
+        grid-template-areas: "header" "nav" "main" aside;
+
+    }
+    li{
+        display: inline;
+        float: left;
+    }
+}
+
+ul{
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    display: block;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 1px;
+
+}
+
+ul li{
+    margin: 0;
+    flex: 1 1;
+}
+
+ul a{
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: dimgrey;
+
+}
+
+
+
+
